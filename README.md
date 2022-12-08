@@ -122,12 +122,11 @@ The balanced accuracy score is between 0 and 1 (0-100%) which states how often t
 Recall is the ability of the classifier to find all the positive samples. A low recall is indicative of a large number of false negatives.
 F1 score is a weighted average of the true positive rate (recall) and precision, where the best score is 1.0 and the worst is 0.0.
 
-If we look at the results of different resampling models (oversampling RandomOverSampler and SMOTE algorithms, the undersampling ClusterCentroids), the Cluster Centroid Undersampling model has a very low accuracy score of 51.2% and has low recall values(0.59/0.44) as well. This model may not be the best one for preventing fraudulent loan applications.
+If we look at the results of different resampling models (oversampling RandomOverSampler and SMOTE algorithms, the undersampling ClusterCentroids), the Cluster Centroid Undersampling model has a very low accuracy score of 51.2% and has low recall values(0.59/0.44) as well. This model may not be the best one for preventing fraudulent loan applications. The RandomOverSampler and SMOTE algorithms showed similar balanced accuracy score of around 64% and have optimum precision and recall values. These models are better in predicting the credit risk but not the best.
 
-The 
+The Combination (Over and Under) Sampling model (SMOTEENN) report showed a similar balanced accuracy score (around 63%) but had high recall values (0.70/0.68) which states a low number of false negatives. But overall, this model too is not effective in predicting the credit risk.
 
-
-
-
+The Balanced Random Forest Classifier has high balanced accuracy score of 78.8% and high recall values (0.67/0.91). This model is good at predicting the credit risk.
+The Easy Ensemble AdaBoost Classifier has high balanced accuracy score of 92.5% and high recall values (0.91/0.94). This model is the best at predicting the credit risk due to its high accuracy in predicting correctly. The high recall value suggests very few false negatives.
 
 
