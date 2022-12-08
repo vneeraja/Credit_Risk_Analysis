@@ -11,11 +11,11 @@ BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit ris
 
 ## Results
 
-1. Use Resampling Models to Predict Credit Risk.
+### 1. Use Resampling Models to Predict Credit Risk.
 
-Using your knowledge of the imbalanced-learn and scikit-learn libraries, you’ll evaluate three machine learning models by using resampling to determine which is better at predicting credit risk.
+Using our knowledge of the imbalanced-learn and scikit-learn libraries, we’ll evaluate three machine learning models by using resampling to determine which is better at predicting credit risk.
 
-A. Random Oversampling
+#### A. Random Oversampling
 
 In random oversampling, instances of the minority class are randomly selected and added to the training set until the majority and minority classes are balanced.
 
@@ -31,7 +31,7 @@ Recall:  For high-risk loans its 0.60 and for low-risk is 0.68. A low recall is 
 
 Support: For our results, there are 17118 actual occurrences for low-risk loans and 87 actual occurrences for high-risk loans.
 
-B. Synthetic Minority Oversampling Technique
+#### B. Synthetic Minority Oversampling Technique
 
 The synthetic minority oversampling technique (SMOTE) is another oversampling approach to deal with unbalanced datasets. In SMOTE, like random oversampling, the size of the minority is increased.
 
@@ -47,7 +47,7 @@ Recall:  For high-risk loans its 0.60 and for low-risk is 0.68. A low recall is 
 
 Support: For our results, there are 17118 actual occurrences for low-risk loans and 87 actual occurrences for high-risk loans.
 
-C. Cluster Centroid Undersampling
+#### C. Cluster Centroid Undersampling
 
 Cluster centroid undersampling is akin to SMOTE. The algorithm identifies clusters of the majority class, then generates synthetic data points, called centroids, that are representative of the clusters. The majority class is then undersampled down to the size of the minority class.
 
@@ -63,7 +63,7 @@ Recall:  For high-risk loans its 0.59 and for low-risk is 0.44. A low recall is 
 
 Support: For our results, there are 17118 actual occurrences for low-risk loans and 87 actual occurrences for high-risk loans.
 
-D. Combination Sampling With SMOTEENN
+### 2. Use the SMOTEENN Algorithm to Predict Credit Risk
 
 SMOTEENN combines the SMOTE and Edited Nearest Neighbors (ENN) algorithms. 
 
@@ -75,10 +75,59 @@ The balanced accuracy score is low at 62.4%.
 
 Precision: The precision for the high-risk loan applications is low at 0.01.
 
-Recall:  For high-risk loans its bit high at 0.70 and for low-risk is 0.68. A low recall is indicative of a large number of false negatives.
+Recall:  For high-risk loans its bit high at 0.70 and for low-risk is 0.68.
+
+Support: For our results, there are 17118 actual occurrences for low-risk loans and 87 actual occurrences for high-risk loans.
+
+### 3. Use Ensemble Classifiers to Predict Credit Risk
+
+Using our knowledge of the imblearn.ensemble library, we’ll train and compare two different ensemble classifiers, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk and evaluate each model.
+
+#### A. Balanced Random Forest Classifier
+
+ A balanced random forest randomly under-samples each boostrap sample to balance it.
+ 
+ ![image](https://user-images.githubusercontent.com/111020934/206325726-33dd618e-262e-45ae-b1f9-333673411ae5.png)
+
+![image](https://user-images.githubusercontent.com/111020934/206325762-4e734f84-5b0c-4e1d-96e2-83381ffc257d.png)
+
+The balanced accuracy score is high at 78.8%.
+
+Precision: The precision for the high-risk loan applications is low at 0.04.
+
+Recall:  For high-risk loans is 0.67 and for low-risk its high at 0.91.
+
+Support: For our results, there are 17118 actual occurrences for low-risk loans and 87 actual occurrences for high-risk loans.
+
+#### B. Easy Ensemble AdaBoost Classifier
+
+The classifier is an ensemble of AdaBoost learners trained on different balanced boostrap samples. The balancing is achieved by random under-sampling. 
+
+![image](https://user-images.githubusercontent.com/111020934/206326329-7be5de1b-34b3-451b-a417-9219890ef3c7.png)
+
+![image](https://user-images.githubusercontent.com/111020934/206326379-6bb18fb2-89b6-46cc-9206-05cb73947c7e.png)
+
+The balanced accuracy score is high at 92.5%.
+
+Precision: The precision for the high-risk loan applications is low at 0.07.
+
+Recall:  For high-risk loans is high at 0.91 and for low-risk its high at 0.94.
 
 Support: For our results, there are 17118 actual occurrences for low-risk loans and 87 actual occurrences for high-risk loans.
 
 
-Deliverable 2: Use the SMOTEENN Algorithm to Predict Credit Risk
-Deliverable 3: Use Ensemble Classifiers to Predict Credit Risk
+## Summary
+
+The balanced accuracy score is between 0 and 1 (0-100%) which states how often the model is good at prediction, the higher the better. Precision is the measure of how reliable a positive classification is and its value is between 0 and 1. A low precision is indicative of a large number of false positives.
+Recall is the ability of the classifier to find all the positive samples. A low recall is indicative of a large number of false negatives.
+F1 score is a weighted average of the true positive rate (recall) and precision, where the best score is 1.0 and the worst is 0.0.
+
+If we look at the results of different resampling models (oversampling RandomOverSampler and SMOTE algorithms, the undersampling ClusterCentroids), the Cluster Centroid Undersampling model has a very low accuracy score of 51.2% and has low recall values(0.59/0.44) as well. This model may not be the best one for preventing fraudulent loan applications.
+
+The 
+
+
+
+
+
+
