@@ -25,11 +25,11 @@ In random oversampling, instances of the minority class are randomly selected an
 
 The balanced accuracy score is low at around 64%, which states that the model was correct 64% of the time.
 
-Precision: The precision for the high-risk loan applications is low at 0.01, indicating a large number of false positives, which indicates an unreliable positive classification.
+**Precision**: The precision for the high-risk loan applications is low at 0.01, indicating a large number of false positives, which indicates an unreliable positive classification.
 
-Recall:  For high-risk loans its 0.60 and for low-risk is 0.68. A low recall is indicative of a large number of false negatives.
+**Recall**:  For high-risk loans its 0.60 and for low-risk is 0.68. A low recall is indicative of a large number of false negatives.
 
-Support: For our results, there are 17118 actual occurrences for low-risk loans and 87 actual occurrences for high-risk loans.
+**Support**: For our results, there are 17118 actual occurrences for low-risk loans and 87 actual occurrences for high-risk loans.
 
 #### B. Synthetic Minority Oversampling Technique
 
@@ -41,11 +41,11 @@ The synthetic minority oversampling technique (SMOTE) is another oversampling ap
 
 The balanced accuracy score is low at 63.7%.
 
-Precision: The precision for the high-risk loan applications is low at 0.01.
+**Precision**: The precision for the high-risk loan applications is low at 0.01.
 
-Recall:  For high-risk loans its 0.60 and for low-risk is 0.68. A low recall is indicative of a large number of false negatives.
+**Recall**:  For high-risk loans its 0.60 and for low-risk is 0.68. A low recall is indicative of a large number of false negatives.
 
-Support: For our results, there are 17118 actual occurrences for low-risk loans and 87 actual occurrences for high-risk loans.
+**Support**: For our results, there are 17118 actual occurrences for low-risk loans and 87 actual occurrences for high-risk loans.
 
 #### C. Cluster Centroid Undersampling
 
@@ -57,11 +57,11 @@ Cluster centroid undersampling is akin to SMOTE. The algorithm identifies cluste
 
 The balanced accuracy score is low at 51.2%.
 
-Precision: The precision for the high-risk loan applications is low at 0.01.
+**Precision**: The precision for the high-risk loan applications is low at 0.01.
 
-Recall:  For high-risk loans its 0.59 and for low-risk is 0.44. A low recall is indicative of a large number of false negatives.
+**Recall**:  For high-risk loans its 0.59 and for low-risk is 0.44. A low recall is indicative of a large number of false negatives.
 
-Support: For our results, there are 17118 actual occurrences for low-risk loans and 87 actual occurrences for high-risk loans.
+**Support**: For our results, there are 17118 actual occurrences for low-risk loans and 87 actual occurrences for high-risk loans.
 
 ### 2. Use the SMOTEENN Algorithm to Predict Credit Risk
 
@@ -73,11 +73,11 @@ SMOTEENN combines the SMOTE and Edited Nearest Neighbors (ENN) algorithms.
 
 The balanced accuracy score is low at 62.4%.
 
-Precision: The precision for the high-risk loan applications is low at 0.01.
+**Precision**: The precision for the high-risk loan applications is low at 0.01.
 
-Recall:  For high-risk loans its bit high at 0.70 and for low-risk is 0.68.
+**Recall**:  For high-risk loans its bit high at 0.70 and for low-risk is 0.68.
 
-Support: For our results, there are 17118 actual occurrences for low-risk loans and 87 actual occurrences for high-risk loans.
+**Support**: For our results, there are 17118 actual occurrences for low-risk loans and 87 actual occurrences for high-risk loans.
 
 ### 3. Use Ensemble Classifiers to Predict Credit Risk
 
@@ -93,11 +93,11 @@ Using our knowledge of the imblearn.ensemble library, we’ll train and compare 
 
 The balanced accuracy score is high at 78.8%.
 
-Precision: The precision for the high-risk loan applications is low at 0.04.
+**Precision**: The precision for the high-risk loan applications is low at 0.04.
 
-Recall:  For high-risk loans is 0.67 and for low-risk its high at 0.91.
+**Recall**:  For high-risk loans is 0.67 and for low-risk its high at 0.91.
 
-Support: For our results, there are 17118 actual occurrences for low-risk loans and 87 actual occurrences for high-risk loans.
+**Support**: For our results, there are 17118 actual occurrences for low-risk loans and 87 actual occurrences for high-risk loans.
 
 #### B. Easy Ensemble AdaBoost Classifier
 
@@ -109,11 +109,11 @@ The classifier is an ensemble of AdaBoost learners trained on different balanced
 
 The balanced accuracy score is high at 92.5%.
 
-Precision: The precision for the high-risk loan applications is low at 0.07.
+**Precision**: The precision for the high-risk loan applications is low at 0.07.
 
-Recall:  For high-risk loans is high at 0.91 and for low-risk its high at 0.94.
+**Recall**:  For high-risk loans is high at 0.91 and for low-risk its high at 0.94.
 
-Support: For our results, there are 17118 actual occurrences for low-risk loans and 87 actual occurrences for high-risk loans.
+**Support**: For our results, there are 17118 actual occurrences for low-risk loans and 87 actual occurrences for high-risk loans.
 
 
 ## Summary
