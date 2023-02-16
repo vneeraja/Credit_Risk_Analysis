@@ -127,6 +127,7 @@ If we look at the results of different resampling models (oversampling RandomOve
 The Combination (Over and Under) Sampling model (SMOTEENN) report showed a similar balanced accuracy score (around 63%) but had high recall values (0.70/0.68) which states a low number of false negatives. But overall, this model too is not effective in predicting the credit risk.
 
 The Balanced Random Forest Classifier has high balanced accuracy score of 78.8% and high recall values (0.67/0.91). This model is good at predicting the credit risk.
-The Easy Ensemble AdaBoost Classifier has high balanced accuracy score of 92.5% and high recall values (0.91/0.94). This model is the best at predicting the credit risk due to its high accuracy in predicting correctly. The high recall value suggests very few false negatives.
+
+**The Easy Ensemble AdaBoost Classifier has high balanced accuracy score of 92.5% and high recall values (0.91/0.94). This model is the best at predicting the credit risk due to its high accuracy in predicting correctly. The high recall value suggests very few false negatives.**
 
 
